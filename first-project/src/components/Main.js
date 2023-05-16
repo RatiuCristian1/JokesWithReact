@@ -28,36 +28,36 @@
 //       );
 // }
 
-import React from "react";
+// import React from "react";
 
-export default function Main() {
-    const [currentImage, setCurrentImage] = React.useState(0);
+// export default function Main() {
+//     const [currentImage, setCurrentImage] = React.useState(0);
   
-    const images = [
-        "hannover-zoo.jpg",
-        "Hannover1.png",
-        "HannoverPlatz.jpg"
-  ];
+//     const images = [
+//         "hannover-zoo.jpg",
+//         "Hannover1.png",
+//         "HannoverPlatz.jpg"
+//   ];
   
-  const handleNextImage = () => {
-        setCurrentImage((currentImage + 1) % images.length);
-      };
+//   const handleNextImage = () => {
+//         setCurrentImage((currentImage + 1) % images.length);
+//       };
       
-      const handlePrevImage = () => {
-        setCurrentImage((currentImage + images.length - 1) % images.length);
-      };
+//       const handlePrevImage = () => {
+//         setCurrentImage((currentImage + images.length - 1) % images.length);
+//       };
         
         
-        const imagesArray = images.map(item => {
-            return <img src={`../images/${item}`} alt="muie-mie"  />
-        })
+//         const imagesArray = images.map(item => {
+//             return <img src={`../images/${item}`} alt="muie-mie"  />
+//         })
     
     
-        return (
-            <div>
-                {imagesArray}
-                <button onClick={handlePrevImage}>Prev</button>
-                <button onClick={handleNextImage}>Next</button>
-            </div>
-  );
-}
+//         return (
+//             <div>
+//                 {imagesArray}
+//                 <button onClick={handlePrevImage}>Prev</button>
+//                 <button onClick={handleNextImage}>Next</button>
+//             </div>
+//   );
+// }
