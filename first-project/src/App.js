@@ -9,7 +9,9 @@ function App() {
             <Navbar />
         </div>
         {/* <Main /> */}
-        <Carousel />
+        <div className='App'>
+            <Carousel />
+        </div>
     </div>
   );
 }
