@@ -21,23 +21,36 @@ export const Carousel = () => {
 
     ];
 
+    const updateIndex = (newIndex) => {
+        if(newIndex < 0) {
+            newIndex = 0
+        } else if(newIndex >= items.length) {
+            newIndex = items.length -1
+        }
+
+        setActiveIndex(newIndex)
+    }
+
     return (
         <div className="carousel">
             <div className="inner"
-            style={{transform: `translate:(-${activeIndex * 100})` }}>
+            style={{transform: `translate(-${activeIndex * 100}%)` }}>
                 {items.map((item) => {
                     return <CarouseItem item={item}/>
                 })}
             </div>
 
             <div>
-                <button className="carousel-buttons">
+                <button onClick={() => {
+                    updateIndex(activeIndex -1)}} 
+                    className="carousel-button1">
                 <span class="material-symbols-outlined">arrow_back_ios</span>
                 </button>
-                <div className="indicators">
-                    <span class="material-symbols-outlined">radio_button_checked</span>
-                </div>
-                <button>
+                
+                <button onClick={() => {
+                    updateIndex(activeIndex + 1)}}
+                    className="carousel-button2">
+
                 <span class="material-symbols-outlined">arrow_forward_ios</span>
                 </button>
             </div>    

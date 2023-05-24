@@ -44,7 +44,6 @@
   white-space: nowrap;
   transition: transform 0.3s;
   box-shadow: 0 5px 15px rgb(0, 0, 0, 0.05);
-  border: 1px solid red;
 }
 
 .carousel-item {
@@ -53,12 +52,15 @@
   justify-content: center;
   height: 450px;
   background-color: #fff;
+  border-radius: 3px;
 }
 
 .carousel-img {
-  max-width: 350px;
-  height: 60%;
-  padding: 0 1.2em 0 1.2em;
+  max-width: 310px;
+  height: 65%;
+  margin: 0 0.2em 0 0.2em;
+  border-radius: 15px;
+
 }
 
 .carousel-item-text {
@@ -68,4 +70,24 @@
   white-space: normal;
   /* color: #617d98; */
   max-width: 250px;
+  
+}
+
+.carousel-button1 {
+  margin-right: 220px;
+  margin-left: 50px;
+}
+
+.carousel-button1,
+.carousel-button2 {
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.material-symbols-outlined {
+  font-size: 1.1rem;
+  color: grey;
+
 }
